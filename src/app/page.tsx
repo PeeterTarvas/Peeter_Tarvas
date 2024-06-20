@@ -3,6 +3,8 @@ import Title from "@/app/ui/titles/MainTitle"
 import InformationTempale from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
+import SkillsGrid from "@/app/ui/skills/SkillsGrid";
+import skillsGrid from "@/app/ui/skills/SkillsGrid";
 
 
 const try_: string[] = [
@@ -25,6 +27,12 @@ const links = new Map<string, string>([
     ['CharningGrid', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
 ]);
 
+const skills =  new Map<string, string[]>([
+    ['Java', ['ED8B00', 'E:\\home\\homepage\\src\\app\\resources\\svg\\java-programming-language-icon.svg']]
+
+    ]
+)
+
 export default function Home() {
   return (
     <main className=" min-h-screen container bg-white text-black mx-auto py-4">
@@ -37,7 +45,7 @@ export default function Home() {
             <SubsectionTitle title={"Projects"} isLeft={true}/>
             <LinkGrid links={links} />
             <SubsectionTitle title={"Skills"} isLeft={false}/>
-
+            <SkillsGrid title={'Programming languages'} skills={skills}/>
         </div>
     </main>
   );
