@@ -3,8 +3,10 @@ import Title from "@/app/ui/titles/MainTitle"
 import InformationTempale from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
-import SkillsGrid from "@/app/ui/skills/SkillsGrid";
+import SkillsGrid, {SkillsGridInterface} from "@/app/ui/skills/SkillsGrid";
 import skillsGrid from "@/app/ui/skills/SkillsGrid";
+import {SkillInterface} from "@/app/ui/skills/Skill";
+import JavaIcon from '@/app/resources/svg/java-programming-language-icon.svg';
 
 
 const try_: string[] = [
@@ -27,11 +29,14 @@ const links = new Map<string, string>([
     ['CharningGrid', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
 ]);
 
-const skills =  new Map<string, string[]>([
-    ['Java', ['ED8B00', 'E:\\home\\homepage\\src\\app\\resources\\svg\\java-programming-language-icon.svg']]
+const skill: SkillInterface = {
+    name: 'Java',
+    color: 'ED8B00',
+    icon: JavaIcon,
+}
 
-    ]
-)
+const skills: SkillInterface[] = [skill]
+
 
 export default function Home() {
   return (

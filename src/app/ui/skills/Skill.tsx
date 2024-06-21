@@ -1,16 +1,17 @@
-import {SVGProps} from "react";
+import JavaIcon from '../../resources/svg/java-programming-language-icon.svg';
+import React from "react";
 
-interface SkillInterface {
+export interface SkillInterface {
     name: string,
     color: string,
-    iconPath: string,
+    icon: React.FC<React.SVGProps<SVGSVGElement>>,
 }
 
-const Skill = (props: SkillInterface) => {
+const Skill: React.FC<SkillInterface> = ({ name, color, icon: Icon }) => {
     return (
-        <div className={`border-[${props.color}] rounded-full bg-white text-black min-h-32 min-w-50 `}>
-            <img src={'E:\\home\\homepage\\src\\app\\resources\\svg\\java-programming-language-icon.svg'} alt={'none'}/>
-            {props.name}
+        <div className={`border-[${color}] border-2 rounded-full bg-white text-black min-h-12 min-w-12 max-h-12 max-w-12 `}>
+            <Icon className="h-8 w-8 mr-2" />
+            {name}
         </div >
     )
 }
