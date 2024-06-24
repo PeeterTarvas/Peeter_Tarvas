@@ -31,7 +31,7 @@ const links = new Map<string, string>([
 
 const skill: SkillInterface = {
     name: 'Java',
-    color: 'ED8B00',
+    color: 'amber-500',
     icon: JavaIcon,
 }
 

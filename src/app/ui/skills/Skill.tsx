@@ -9,9 +9,14 @@ export interface SkillInterface {
 
 const Skill: React.FC<SkillInterface> = ({ name, color, icon: Icon }) => {
     return (
-        <div className={`border-[${color}] border-2 rounded-full bg-white text-black min-h-12 min-w-12 max-h-12 max-w-12 `}>
-            <Icon className="h-8 w-8 mr-2" />
-            {name}
+        <div
+            className={`grid grid-cols-2 border-[${color}] border-2 rounded-full bg-white text-black min-h-12 min-w-12 max-h-18 max-w-32 `}>
+            <div className="justify-self-end place-self-center" >
+                <Icon className="h-8 w-8 mr-2" />
+            </div>
+            <div className={'justify-self-start place-self-center'}>
+                {name}
+            </div>
         </div >
     )
 }
