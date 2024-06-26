@@ -1,12 +1,9 @@
-import Image from "next/image";
 import Title from "@/app/ui/titles/MainTitle"
 import InformationTempale from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
 import SkillsGrid, {SkillsGridInterface} from "@/app/ui/skills/SkillsGrid";
-import skillsGrid from "@/app/ui/skills/SkillsGrid";
-import {SkillInterface} from "@/app/ui/skills/Skill";
-import JavaIcon from '@/app/resources/svg/java-programming-language-icon.svg';
+import {skills} from "@/app/repository/IconGridRepository";
 
 
 const try_: string[] = [
@@ -29,18 +26,12 @@ const links = new Map<string, string>([
     ['CharningGrid', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
 ]);
 
-const skill: SkillInterface = {
-    name: 'Java',
-    color: 'amber-500',
-    icon: JavaIcon,
-}
 
-const skills: SkillInterface[] = [skill]
 
 
 export default function Home() {
   return (
-    <main className=" min-h-screen container bg-white text-black mx-auto py-4">
+    <main className=" border-b-blue-950 min-h-screen container bg-white text-black mx-auto py-4">
         <Title/>
         <div className={"flex flex-col container min-h-96"}>
             <SubsectionTitle title={"try"} isLeft={true}/>

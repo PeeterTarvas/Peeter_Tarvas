@@ -18,7 +18,7 @@ const getSkills = (props: SkillsGridInterface) => {
 
 const SkillsGrid: React.FC<SkillsGridInterface> = (props: SkillsGridInterface) => {
     return (
-        <div>
+        <div className={"grid grid-cols-10 gap-6 self-center"}>
             {getSkills(props)}
         </div>
     );
