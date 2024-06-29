@@ -48,6 +48,7 @@ import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
 
 
 import {SkillInterface} from "@/app/ui/skills/Skill";
+import {Sen} from "next/dist/compiled/@next/font/dist/google";
 
 const JavaSkill: SkillInterface = {
     name: 'Java',
@@ -199,8 +200,148 @@ const GitSkill: SkillInterface = {
     icon: GitIcon,
 }
 
+const SwaggerSkill: SkillInterface = {
+    name: 'Swagger',
+    borderColor: 'border-blue-800',
+    icon: SwaggerIcon,
+}
+
+const GitlabSkill: SkillInterface = {
+    name: 'GitLab',
+    borderColor: 'border-blue-800',
+    icon: GitlabIcon,
+}
+
+const GithubSkill: SkillInterface = {
+    name: 'GitHub',
+    borderColor: 'border-blue-800',
+    icon: GithubIcon,
+}
+
+const BitbucketSkill: SkillInterface = {
+    name: 'Bitbucket',
+    borderColor: 'border-blue-800',
+    icon: BitbucketIcon,
+}
+
+const AwsSkill: SkillInterface = {
+    name: 'AWS',
+    borderColor: 'border-blue-800',
+    icon: AwsIcon,
+}
+
+const DockerSkill: SkillInterface = {
+    name: 'Docker',
+    borderColor: 'border-blue-800',
+    icon: DockerIcon,
+}
+
+const NginxSkill: SkillInterface = {
+    name: 'Nginx',
+    borderColor: 'border-blue-800',
+    icon: NginxIcon,
+}
+
+const BuildkiteSkill: SkillInterface = {
+    name: 'Buildkite',
+    borderColor: 'border-blue-800',
+    icon: BuildkiteIcon,
+}
+
+const JenkinsSkill: SkillInterface = {
+    name: 'Jenkins',
+    borderColor: 'border-blue-800',
+    icon: JenkinsIcon,
+}
+
+const MavenSkill: SkillInterface = {
+    name: 'Maven',
+    borderColor: 'border-blue-800',
+    icon: MavenIcon,
+}
+
+const GradleSkill: SkillInterface = {
+    name: 'Gradle',
+    borderColor: 'border-blue-800',
+    icon: GradleIcon,
+}
+
+const AntSkill: SkillInterface = {
+    name: 'Ant',
+    borderColor: 'border-blue-800',
+    icon: AntIcon,
+}
+
+const IntellijSkill: SkillInterface = {
+    name: 'IntelliJ',
+    borderColor: 'border-blue-800',
+    icon: IntellijIcon,
+}
+
+const VsCodeSkill: SkillInterface = {
+    name: 'VS Code',
+    borderColor: 'border-blue-800',
+    icon: VsCodeIcon,
+}
+
+const NetbeansSkill: SkillInterface = {
+    name: 'NetBeans',
+    borderColor: 'border-blue-800',
+    icon: NetbeansIcon,
+}
+
+const DatadogSkill: SkillInterface = {
+    name: 'Datadog',
+    borderColor: 'border-blue-800',
+    icon: DatadogIcon,
+}
+
+const JiraSkill: SkillInterface = {
+    name: 'Jira',
+    borderColor: 'border-blue-800',
+    icon: JiraIcon,
+}
+
+const ConfluenceSkill: SkillInterface = {
+    name: 'Confluence',
+    borderColor: 'border-blue-800',
+    icon: ConfluenceIcon,
+}
+
+const SentrySkill: SkillInterface = {
+    name: 'Sentry',
+    borderColor: 'border-blue-800',
+    icon: SentryIcon,
+}
+
+const GrafanaSkill: SkillInterface = {
+    name: 'Grafana',
+    borderColor: 'border-blue-800',
+    icon: GrafanaIcon,
+}
+
+const FigmaSkill: SkillInterface = {
+    name: 'Figma',
+    borderColor: 'border-blue-800',
+    icon: FigmaIcon,
+}
 
 
 
-export const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
-    JavascriptSkill, PostgresqlSkill, MSSQLSkill, OracleSkill, MatlabSkill, RSkill, PowershellSkill, BashSkill, HtmlSkill, CssSkill]
+
+const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
+    JavascriptSkill, PostgresqlSkill, MSSQLSkill, OracleSkill, MatlabSkill,
+    RSkill, PowershellSkill, BashSkill, HtmlSkill, CssSkill];
+
+const frameworksLibraries: SkillInterface[] = [AngularSkill, SpringBootSkill, PlaywrightSkill, ReactSkill, VueSkill,
+    FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill];
+
+const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, BuildkiteSkill, JenkinsSkill,
+    MavenSkill, GradleSkill, GitlabSkill, GithubSkill, AntSkill ];
+
+const tools: SkillInterface[] = [IntellijSkill, VsCodeSkill, NetbeansSkill, DatadogSkill, JiraSkill, ConfluenceSkill,
+    SentrySkill, GrafanaSkill, FigmaSkill];
+
+export { programmingSkills, frameworksLibraries, devOps, tools };
+
+

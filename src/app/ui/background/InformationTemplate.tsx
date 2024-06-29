@@ -1,6 +1,6 @@
 import React from "react";
 
-interface InformationTemplateProps {
+interface InformationTemplateInterface {
     title: string;
     isLeft: boolean;
     text: Map<string, string[]>;
@@ -19,7 +19,7 @@ const getText = (text: Map<string, string[]>) => {
     return elements;
 };
 
-const LeftTemplate = ({ text }: InformationTemplateProps) => {
+const LeftTemplate = ({ text }: InformationTemplateInterface) => {
     return (
         <div className="rounded-r-2xl min-h-96 min-w-96 max-h-96 max-w-full bg-regal-blue self-start text-white">
             {getText(text)}
@@ -27,7 +27,7 @@ const LeftTemplate = ({ text }: InformationTemplateProps) => {
     );
 }
 
-const RightTemplate = ({ text }: InformationTemplateProps) => {
+const RightTemplate = ({ text }: InformationTemplateInterface) => {
     return (
         <div className="rounded-l-2xl min-h-96 min-w-96 bg-regal-blue self-end text-white">
             {getText(text)}
@@ -35,7 +35,7 @@ const RightTemplate = ({ text }: InformationTemplateProps) => {
     );
 }
 
-const InformationTemplate = (props: InformationTemplateProps) => {
+const InformationTemplate = (props: InformationTemplateInterface) => {
     const { isLeft } = props;
     if (isLeft) {
         return <LeftTemplate {...props} />;

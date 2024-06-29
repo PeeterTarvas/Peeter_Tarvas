@@ -2,28 +2,22 @@ import Title from "@/app/ui/titles/MainTitle"
 import InformationTempale from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
-import SkillsGrid, {SkillsGridInterface} from "@/app/ui/skills/SkillsGrid";
-import {programmingSkills} from "@/app/repository/IconGridRepository";
+import SkillsGrid from "@/app/ui/skills/SkillsGrid";
+import {devOps, frameworksLibraries, programmingSkills, tools} from "@/app/repository/IconGridRepository";
+import {helmesInfo, taltechInfo} from "@/app/repository/InformationRepository";
 
 
-const try_: string[] = [
-    'Member of the Student Parliament and the Academic Committee',
-    'Member of TalTech Student Council of the School of IT',
-    'Exchange year with Erasmus+ at University of Alcala, Spain'
-]
 
-const txt = new Map<string, string[]>([
-    ['Tallinn University of Technology - Bachelor of Science in Engineering - Informatics', try_]
-]);
+
 
 const links = new Map<string, string>([
     ['Drawing Strategies Analysis for \n' +
     'Embedded Figure Drawing Tests', 'https://digikogu.taltech.ee/et/Item/270479c8-0f65-44b3-a4b2-4aec65e28d58'],
     ['BoxheadTypeGame', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
-    ['JavaTask', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
-    ['StockViewer', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
-    ['AntColonySimulator', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
-    ['CharningGrid', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
+    ['JavaTask', 'https://github.com/PeeterTarvas/JavaTask'],
+    ['StockViewer', 'https://github.com/PeeterTarvas/StockViewer'],
+    ['AntColonySimulator', 'https://github.com/PeeterTarvas/AntColonySimulator'],
+    ['CharningGrid', 'https://github.com/PeeterTarvas/ChargingGrid'],
 ]);
 
 
@@ -35,14 +29,17 @@ export default function Home() {
         <Title/>
         <div className={"flex flex-col container min-h-96"}>
             <SubsectionTitle title={"try"} isLeft={true}/>
-            <InformationTempale title={"Test"} isLeft={false}  text={txt}/>
+            <InformationTempale title={"Test"} isLeft={false} text={taltechInfo}/>
             <SubsectionTitle title={"try"} isLeft={true}/>
-            <InformationTempale title={"Test2"} isLeft={true} text={txt}/>
+            <InformationTempale title={"Test2"} isLeft={true} text={helmesInfo}/>
             <SubsectionTitle title={"Projects"} isLeft={true}/>
             <LinkGrid links={links} />
             <SubsectionTitle title={"Skills"} isLeft={false}/>
             <SkillsGrid title={'Programming languages'} skills={programmingSkills}/>
-            <SkillsGrid title={'Frameworks & Libraries'} skills={programmingSkills}/>
+            <SkillsGrid title={'Frameworks & Libraries'} skills={frameworksLibraries}/>
+            <SkillsGrid title={'DevOps'} skills={devOps}/>
+            <SkillsGrid title={'Tools'} skills={tools}/>
+
         </div>
     </main>
   );
