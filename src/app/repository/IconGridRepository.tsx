@@ -11,6 +11,39 @@ import PowershellIcon from '@/app/resources/svg/powershell-icon.svg';
 import BashIcon from '@/app/resources/svg/bash-icon.svg';
 import HtmlIcon from '@/app/resources/svg/html-icon.svg';
 import CssIcon from '@/app/resources/svg/css-icon.svg';
+import AngularIcon from '@/app/resources/svg/angular-icon.svg';
+import SpringBootIcon from '@/app/resources/svg/spring-boot-icon.svg';
+import PlaywrightIcon from '@/app/resources/svg/playwright-icon.svg';
+import ReactIcon from '@/app/resources/svg/react-icon.svg';
+import VueIcon from '@/app/resources/svg/vue-icon.svg';
+import FlaskIcon from '@/app/resources/svg/flask-icon.svg';
+import PytorchIcon from '@/app/resources/svg/pytorch-icon.svg';
+import JupyterIcon from '@/app/resources/svg/jupyter-icon.svg';
+import YOLOv8Icon from '@/app/resources/svg/yolov8-icon.svg';
+import MatplotlibIcon from '@/app/resources/svg/matplotlib-icon.svg';
+import JwtIcon from '@/app/resources/svg/jwt-icon.svg';
+import SwaggerIcon from '@/app/resources/svg/swagger-icon.svg';
+import GitIcon from '@/app/resources/svg/git-icon.svg';
+import GitlabIcon from '@/app/resources/svg/gitlab-icon.svg';
+import GithubIcon from '@/app/resources/svg/github-icon.svg';
+import BitbucketIcon from '@/app/resources/svg/bitbucket-icon.svg';
+import AwsIcon from '@/app/resources/svg/aws-icon.svg';
+import DockerIcon from '@/app/resources/svg/docker-icon.svg';
+import NginxIcon from '@/app/resources/svg/nginx-icon.svg';
+import BuildkiteIcon from '@/app/resources/svg/buildkite-icon.svg';
+import JenkinsIcon from '@/app/resources/svg/jenkins-icon.svg';
+import MavenIcon from '@/app/resources/svg/maven-icon.svg';
+import GradleIcon from '@/app/resources/svg/gradle-icon.svg';
+import AntIcon from '@/app/resources/svg/ant-icon.svg';
+import IntellijIcon from '@/app/resources/svg/intellij-icon.svg';
+import VsCodeIcon from '@/app/resources/svg/vscode-icon.svg';
+import NetbeansIcon from '@/app/resources/svg/netbeans-icon.svg';
+import DatadogIcon from '@/app/resources/svg/datadog-icon.svg';
+import JiraIcon from '@/app/resources/svg/jira-icon.svg';
+import ConfluenceIcon from '@/app/resources/svg/confluence-icon.svg';
+import SentryIcon from '@/app/resources/svg/sentry-icon.svg';
+import GrafanaIcon from '@/app/resources/svg/grafana-icon.svg';
+import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
 
 
 
@@ -18,81 +51,156 @@ import {SkillInterface} from "@/app/ui/skills/Skill";
 
 const JavaSkill: SkillInterface = {
     name: 'Java',
-    color: 'amber-500',
+    borderColor: 'border-amber-500',
     icon: JavaIcon,
 }
 
 const PythonSkill: SkillInterface = {
     name: 'Python',
-    color: 'b-blue-950',
+    borderColor: 'border-blue-950',
     icon: PythonIcon,
 }
 
 const TypescriptSkill: SkillInterface = {
     name: 'Typescript',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: TypescriptIcon,
 }
 
 const JavascriptSkill: SkillInterface = {
     name: 'Javascript',
-    color: 'amber-400',
+    borderColor: 'border-amber-400',
     icon: JavascriptIcon,
 }
 
 const PostgresqlSkill: SkillInterface = {
     name: 'Postgre',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: PostgresqlIcon,
 }
 
 const MSSQLSkill: SkillInterface = {
     name: 'MSSQL',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: MSSQLIcon,
 }
 
 const OracleSkill: SkillInterface = {
     name: 'Oracle',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: OracleIcon,
 }
 
 const MatlabSkill: SkillInterface = {
     name: 'Matlab',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: MatlabIcon,
 }
 
 const RSkill: SkillInterface = {
     name: 'R',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: RIcon,
 }
 
 const PowershellSkill: SkillInterface = {
     name: 'Powershell',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: PowershellIcon,
 }
 
 const BashSkill: SkillInterface = {
     name: 'Bash',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: BashIcon,
 }
 
 const HtmlSkill: SkillInterface = {
     name: 'HTML',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: HtmlIcon,
 }
 
 const CssSkill: SkillInterface = {
     name: 'CSS',
-    color: 'b-blue-800',
+    borderColor: 'border-blue-800',
     icon: CssIcon,
 }
 
-export const skills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
+const AngularSkill: SkillInterface = {
+    name: 'Angular',
+    borderColor: 'border-blue-800',
+    icon: AngularIcon,
+}
+
+const SpringBootSkill: SkillInterface = {
+    name: 'Spring Boot',
+    borderColor: 'border-blue-800',
+    icon: SpringBootIcon,
+}
+
+const PlaywrightSkill: SkillInterface = {
+    name: 'Playwright',
+    borderColor: 'border-blue-800',
+    icon: PlaywrightIcon,
+}
+
+const ReactSkill: SkillInterface = {
+    name: 'React',
+    borderColor: 'border-blue-800',
+    icon: ReactIcon,
+}
+
+const VueSkill: SkillInterface = {
+    name: 'Vue',
+    borderColor: 'border-blue-800',
+    icon: VueIcon,
+}
+
+const FlaskSkill: SkillInterface = {
+    name: 'Flask',
+    borderColor: 'border-blue-800',
+    icon: FlaskIcon,
+}
+
+const PytorchSkill: SkillInterface = {
+    name: 'Pytorch',
+    borderColor: 'border-blue-800',
+    icon: PytorchIcon,
+}
+
+const JupyterSkill: SkillInterface = {
+    name: 'Jupyter',
+    borderColor: 'border-blue-800',
+    icon: JupyterIcon,
+}
+
+const YOLOSkill: SkillInterface = {
+    name: 'YOLO',
+    borderColor: 'border-blue-800',
+    icon: YOLOv8Icon,
+}
+
+const MatplotlibSkill: SkillInterface = {
+    name: 'Matplotlib',
+    borderColor: 'border-blue-800',
+    icon: MatplotlibIcon,
+}
+
+const JwtSkill: SkillInterface = {
+    name: 'Jwt',
+    borderColor: 'border-blue-800',
+    icon: JwtIcon,
+}
+
+const GitSkill: SkillInterface = {
+    name: 'CSS',
+    borderColor: 'border-blue-800',
+    icon: GitIcon,
+}
+
+
+
+
+export const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
     JavascriptSkill, PostgresqlSkill, MSSQLSkill, OracleSkill, MatlabSkill, RSkill, PowershellSkill, BashSkill, HtmlSkill, CssSkill]

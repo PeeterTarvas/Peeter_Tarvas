@@ -3,7 +3,7 @@ import InformationTempale from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
 import SkillsGrid, {SkillsGridInterface} from "@/app/ui/skills/SkillsGrid";
-import {skills} from "@/app/repository/IconGridRepository";
+import {programmingSkills} from "@/app/repository/IconGridRepository";
 
 
 const try_: string[] = [
@@ -31,7 +31,7 @@ const links = new Map<string, string>([
 
 export default function Home() {
   return (
-    <main className=" border-b-blue-950 min-h-screen container bg-white text-black mx-auto py-4">
+    <main className="min-h-screen container bg-white text-black mx-auto py-4">
         <Title/>
         <div className={"flex flex-col container min-h-96"}>
             <SubsectionTitle title={"try"} isLeft={true}/>
@@ -41,7 +41,8 @@ export default function Home() {
             <SubsectionTitle title={"Projects"} isLeft={true}/>
             <LinkGrid links={links} />
             <SubsectionTitle title={"Skills"} isLeft={false}/>
-            <SkillsGrid title={'Programming languages'} skills={skills}/>
+            <SkillsGrid title={'Programming languages'} skills={programmingSkills}/>
+            <SkillsGrid title={'Frameworks & Libraries'} skills={programmingSkills}/>
         </div>
     </main>
   );
