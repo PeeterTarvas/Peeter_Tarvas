@@ -111,7 +111,7 @@ const PowershellSkill: SkillInterface = {
 
 const BashSkill: SkillInterface = {
     name: 'Bash',
-    borderColor: 'border-[#4EAA25]', // Bash logo color
+    borderColor: 'border-[#000000]', // Bash logo color
     icon: BashIcon,
 }
 
