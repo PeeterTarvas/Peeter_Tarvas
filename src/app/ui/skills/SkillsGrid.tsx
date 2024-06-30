@@ -1,31 +1,31 @@
 import Link from "@/app/ui/link-grid/Link";
 import React from "react";
-import Skill from "@/app/ui/skills/Skill";
+import Skill, {SkillInterface} from "@/app/ui/skills/Skill";
 
-interface SkillsGridInterface {
+export interface SkillsGridInterface {
     title: string,
-    skills: Map<string, string[]>,
-
+    skills: SkillInterface[];
 }
 
-const getSkills = (links: Map<string, string[]>) => {
+
+const getSkills = (props: SkillsGridInterface) => {
     const elements: React.JSX.Element[] = [];
-    links.forEach( (value, key) => {
-        elements.push(<Skill name={key} color={value[0]} iconPath={value[1]}/>)
+    props.skills.forEach( (skill, index) => {
+        elements.push(<Skill key={index} name={skill.name} borderColor={skill.borderColor} icon={skill.icon} />)
     })
     return elements;
 }
 
-const LinkGrid = (props: SkillsGridInterface) => {
+const SkillsGrid: React.FC<SkillsGridInterface> = (props: SkillsGridInterface) => {
     return (
-        <div>
+        <div className={"m-4"}>
             {props.title}
-            <div className={"grid grid-cols-2 grid-rows-3 gap-6 self-center"}>
-                {getSkills(props.skills)}
+            <div className={"grid grid-cols-8 gap-6 self-center"}>
+                {getSkills(props)}
             </div>
         </div>
-    )
 
-}
+    );
+};
 
-export default LinkGrid;
+export default SkillsGrid;
