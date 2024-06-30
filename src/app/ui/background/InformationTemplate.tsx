@@ -1,11 +1,9 @@
 import React from "react";
 
 interface InformationTemplateInterface {
-    title: string;
     isLeft: boolean;
     text: Map<string, string[]>;
 }
-
 
 
 const getText = (text: Map<string, string[]>) => {
@@ -21,7 +19,7 @@ const getText = (text: Map<string, string[]>) => {
 
 const LeftTemplate = ({ text }: InformationTemplateInterface) => {
     return (
-        <div className="rounded-r-2xl min-h-96 min-w-96 max-h-96 max-w-full bg-regal-blue self-start text-white">
+        <div className="my-10 p-10 rounded-r-3xl min-w-96 max-h-96 max-w-full bg-regal-blue self-start text-white">
             {getText(text)}
         </div>
     );
@@ -29,15 +27,14 @@ const LeftTemplate = ({ text }: InformationTemplateInterface) => {
 
 const RightTemplate = ({ text }: InformationTemplateInterface) => {
     return (
-        <div className="rounded-l-2xl min-h-96 min-w-96 bg-regal-blue self-end text-white">
+        <div className="my-10 p-10 rounded-l-3xl min-w-96 bg-regal-blue max-w-full self-end text-white">
             {getText(text)}
         </div>
     );
 }
 
 const InformationTemplate = (props: InformationTemplateInterface) => {
-    const { isLeft } = props;
-    if (isLeft) {
+    if (props.isLeft) {
         return <LeftTemplate {...props} />;
     } else {
         return <RightTemplate {...props} />;

@@ -48,281 +48,280 @@ import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
 
 
 import {SkillInterface} from "@/app/ui/skills/Skill";
-import {Sen} from "next/dist/compiled/@next/font/dist/google";
 
 const JavaSkill: SkillInterface = {
     name: 'Java',
-    borderColor: 'border-amber-500',
+    borderColor: 'border-[#5382A1]', // Java logo color
     icon: JavaIcon,
 }
 
 const PythonSkill: SkillInterface = {
     name: 'Python',
-    borderColor: 'border-blue-950',
+    borderColor: 'border-[#3776AB]', // Python logo color
     icon: PythonIcon,
 }
 
 const TypescriptSkill: SkillInterface = {
     name: 'Typescript',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#3178C6]', // TypeScript logo color
     icon: TypescriptIcon,
 }
 
 const JavascriptSkill: SkillInterface = {
     name: 'Javascript',
-    borderColor: 'border-amber-400',
+    borderColor: 'border-[#F7DF1E]', // JavaScript logo color
     icon: JavascriptIcon,
 }
 
 const PostgresqlSkill: SkillInterface = {
     name: 'Postgre',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#336791]', // PostgreSQL logo color
     icon: PostgresqlIcon,
 }
 
 const MSSQLSkill: SkillInterface = {
     name: 'MSSQL',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#CC2927]', // Microsoft SQL Server logo color
     icon: MSSQLIcon,
 }
 
 const OracleSkill: SkillInterface = {
     name: 'Oracle',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#F80000]', // Oracle logo color
     icon: OracleIcon,
 }
 
 const MatlabSkill: SkillInterface = {
     name: 'Matlab',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#0076A8]', // Matlab logo color
     icon: MatlabIcon,
 }
 
 const RSkill: SkillInterface = {
     name: 'R',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#276DC3]', // R logo color
     icon: RIcon,
 }
 
 const PowershellSkill: SkillInterface = {
     name: 'Powershell',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#5391FE]', // PowerShell logo color
     icon: PowershellIcon,
 }
 
 const BashSkill: SkillInterface = {
     name: 'Bash',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#4EAA25]', // Bash logo color
     icon: BashIcon,
 }
 
 const HtmlSkill: SkillInterface = {
     name: 'HTML',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#E34F26]', // HTML logo color
     icon: HtmlIcon,
 }
 
 const CssSkill: SkillInterface = {
     name: 'CSS',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#1572B6]', // CSS logo color
     icon: CssIcon,
 }
 
 const AngularSkill: SkillInterface = {
     name: 'Angular',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#DD0031]', // Angular logo color
     icon: AngularIcon,
 }
 
 const SpringBootSkill: SkillInterface = {
     name: 'Spring Boot',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#6DB33F]', // Spring Boot logo color
     icon: SpringBootIcon,
 }
 
 const PlaywrightSkill: SkillInterface = {
     name: 'Playwright',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#2EAD33]', // Playwright logo color
     icon: PlaywrightIcon,
 }
 
 const ReactSkill: SkillInterface = {
     name: 'React',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#61DAFB]', // React logo color
     icon: ReactIcon,
 }
 
 const VueSkill: SkillInterface = {
     name: 'Vue',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#42B883]', // Vue.js logo color
     icon: VueIcon,
 }
 
 const FlaskSkill: SkillInterface = {
     name: 'Flask',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#000000]', // Flask logo color
     icon: FlaskIcon,
 }
 
 const PytorchSkill: SkillInterface = {
     name: 'Pytorch',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#EE4C2C]', // PyTorch logo color
     icon: PytorchIcon,
 }
 
 const JupyterSkill: SkillInterface = {
     name: 'Jupyter',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#F37626]', // Jupyter logo color
     icon: JupyterIcon,
 }
 
 const YOLOSkill: SkillInterface = {
     name: 'YOLO',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#0B23A9]', // YOLO logo color
     icon: YOLOv8Icon,
 }
 
 const MatplotlibSkill: SkillInterface = {
     name: 'Matplotlib',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#11557C]', // Matplotlib logo color
     icon: MatplotlibIcon,
 }
 
 const JwtSkill: SkillInterface = {
     name: 'Jwt',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#000000]', // JWT logo color
     icon: JwtIcon,
 }
 
 const GitSkill: SkillInterface = {
-    name: 'CSS',
-    borderColor: 'border-blue-800',
+    name: 'Git',
+    borderColor: 'border-[#F05032]', // Git logo color
     icon: GitIcon,
 }
 
 const SwaggerSkill: SkillInterface = {
     name: 'Swagger',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#85EA2D]', // Swagger logo color
     icon: SwaggerIcon,
 }
 
 const GitlabSkill: SkillInterface = {
     name: 'GitLab',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#FC6D26]', // GitLab logo color
     icon: GitlabIcon,
 }
 
 const GithubSkill: SkillInterface = {
     name: 'GitHub',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#181717]', // GitHub logo color
     icon: GithubIcon,
 }
 
 const BitbucketSkill: SkillInterface = {
     name: 'Bitbucket',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#0052CC]', // Bitbucket logo color
     icon: BitbucketIcon,
 }
 
 const AwsSkill: SkillInterface = {
     name: 'AWS',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#FF9900]', // AWS logo color
     icon: AwsIcon,
 }
 
 const DockerSkill: SkillInterface = {
     name: 'Docker',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#2496ED]', // Docker logo color
     icon: DockerIcon,
 }
 
 const NginxSkill: SkillInterface = {
     name: 'Nginx',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#009639]', // Nginx logo color
     icon: NginxIcon,
 }
 
 const BuildkiteSkill: SkillInterface = {
     name: 'Buildkite',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#14CC80]', // Buildkite logo color
     icon: BuildkiteIcon,
 }
 
 const JenkinsSkill: SkillInterface = {
     name: 'Jenkins',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#D24939]', // Jenkins logo color
     icon: JenkinsIcon,
 }
 
 const MavenSkill: SkillInterface = {
     name: 'Maven',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#C71A36]', // Maven logo color
     icon: MavenIcon,
 }
 
 const GradleSkill: SkillInterface = {
     name: 'Gradle',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#02303A]', // Gradle logo color
     icon: GradleIcon,
 }
 
 const AntSkill: SkillInterface = {
     name: 'Ant',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#A91400]', // Apache Ant logo color
     icon: AntIcon,
 }
 
 const IntellijSkill: SkillInterface = {
     name: 'IntelliJ',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#000000]', // IntelliJ IDEA logo color
     icon: IntellijIcon,
 }
 
 const VsCodeSkill: SkillInterface = {
     name: 'VS Code',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#007ACC]', // Visual Studio Code logo color
     icon: VsCodeIcon,
 }
 
 const NetbeansSkill: SkillInterface = {
     name: 'NetBeans',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#1B6AC6]', // NetBeans logo color
     icon: NetbeansIcon,
 }
 
 const DatadogSkill: SkillInterface = {
     name: 'Datadog',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#632CA6]', // Datadog logo color
     icon: DatadogIcon,
 }
 
 const JiraSkill: SkillInterface = {
     name: 'Jira',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#0052CC]', // Jira logo color
     icon: JiraIcon,
 }
 
 const ConfluenceSkill: SkillInterface = {
     name: 'Confluence',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#172B4D]', // Confluence logo color
     icon: ConfluenceIcon,
 }
 
 const SentrySkill: SkillInterface = {
     name: 'Sentry',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#FB4226]', // Sentry logo color
     icon: SentryIcon,
 }
 
 const GrafanaSkill: SkillInterface = {
     name: 'Grafana',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#F46800]', // Grafana logo color
     icon: GrafanaIcon,
 }
 
 const FigmaSkill: SkillInterface = {
     name: 'Figma',
-    borderColor: 'border-blue-800',
+    borderColor: 'border-[#F24E1E]', // Figma logo color
     icon: FigmaIcon,
 }
 
@@ -337,10 +336,10 @@ const frameworksLibraries: SkillInterface[] = [AngularSkill, SpringBootSkill, Pl
     FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill];
 
 const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, BuildkiteSkill, JenkinsSkill,
-    MavenSkill, GradleSkill, GitlabSkill, GithubSkill, AntSkill ];
+    MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill];
 
 const tools: SkillInterface[] = [IntellijSkill, VsCodeSkill, NetbeansSkill, DatadogSkill, JiraSkill, ConfluenceSkill,
-    SentrySkill, GrafanaSkill, FigmaSkill];
+    SentrySkill, GrafanaSkill, FigmaSkill, SwaggerSkill];
 
 export { programmingSkills, frameworksLibraries, devOps, tools };
 
