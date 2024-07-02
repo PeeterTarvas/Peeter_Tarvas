@@ -4,7 +4,7 @@ const nextConfig = {
     output: "export",
     reactStrictMode: true,
     images: {
-        domains: ['example.com'],
+        unoptimized: true,
     },
     webpack(config) {
         config.module.rules.push({
