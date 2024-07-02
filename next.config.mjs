@@ -3,6 +3,9 @@ const nextConfig = {
     basePath: "/Peeter_Tarvas",
     output: "export",
     reactStrictMode: true,
+    images: {
+        unoptimized: true,
+    },
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
