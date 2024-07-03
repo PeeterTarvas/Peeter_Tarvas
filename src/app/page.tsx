@@ -5,18 +5,9 @@ import LinkGrid from "@/app/ui/link-grid/LinkGrid";
 import SkillsGrid from "@/app/ui/skills/SkillsGrid";
 import {devOps, frameworksLibraries, programmingSkills, tools} from "@/app/repository/SkillRepository";
 import {helmesInfo, lhvPankInfo, taltechInfo, twilioInfo} from "@/app/repository/InformationRepository";
+import links from "@/app/repository/ProjectRepository";
 
 
-
-const links = new Map<string, string>([
-    ['Drawing Strategies Analysis for \n' +
-    'Embedded Figure Drawing Tests', 'https://digikogu.taltech.ee/et/Item/270479c8-0f65-44b3-a4b2-4aec65e28d58'],
-    ['BoxheadTypeGame', 'https://github.com/PeeterTarvas/BoxheadTypeGame'],
-    ['JavaTask', 'https://github.com/PeeterTarvas/JavaTask'],
-    ['StockViewer', 'https://github.com/PeeterTarvas/StockViewer'],
-    ['AntColonySimulator', 'https://github.com/PeeterTarvas/AntColonySimulator'],
-    ['CharningGrid', 'https://github.com/PeeterTarvas/ChargingGrid'],
-]);
 
 
 
