@@ -9,7 +9,7 @@ interface InformationTemplateInterface {
 const getText = (text: Map<string, string[]>) => {
     const elements: React.JSX.Element[] = [];
     text.forEach((values, key) => {
-        elements.push(<ul className={"m-1 text-4xl list-none"} key={key}>{key}</ul>);
+        elements.push(<ul className={"list-none m-1 text-4xl"} key={key}>{key}</ul>);
         values.forEach((value, index) => {
             elements.push(<li className={"m-4 text-xl"} key={`${key}-${index}`}>{value}</li>);
         });

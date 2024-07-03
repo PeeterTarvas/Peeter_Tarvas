@@ -20,7 +20,6 @@ const LinkGrid = (props: LinkGridInterface) => {
             {getLinks(props.links)}
         </div>
     )
-  
 }
 
 export default LinkGrid;
