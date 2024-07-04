@@ -14,7 +14,7 @@ const Skill: React.FC<SkillInterface> = ({ name, borderColor, icon: Icon }) => {
             <div className="flex-shrink-0 justify-self-end mx-1 place-self-center" >
                 <Icon className="h-9 w-9" />
             </div>
-            <div className={'justify-self-center place-self-center  text-center mr-1 flex-grow whitespace-nowrap text-ellipsis'}>
+            <div className={'justify-self-center place-self-center text-center mr-1 flex-grow whitespace-nowrap text-ellipsis'}>
                 <h1 className="whitespace-nowrap overflow-hidden text-ellipsis">{name}</h1>
             </div>
         </div >

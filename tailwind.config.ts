@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      minWidth: {
+        '128': '32rem',
+      },
       keyframes: {
         rollInFromLeft: {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },

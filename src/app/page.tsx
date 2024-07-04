@@ -18,12 +18,11 @@ export default function Home() {
         <Title/>
         <div className={"flex flex-col container min-h-96"}>
             <SubsectionTitle title={"Education"} isLeft={false}/>
-            <InformationTempale isLeft={false} text={taltechInfo}/>
-
+            <InformationTempale {...taltechInfo}/>
             <SubsectionTitle title={"Career"} isLeft={true}/>
-            <InformationTempale isLeft={true} text={helmesInfo}/>
-            <InformationTempale isLeft={false} text={lhvPankInfo}/>
-            <InformationTempale isLeft={true} text={twilioInfo}/>
+            <InformationTempale {...helmesInfo} />
+            <InformationTempale {...lhvPankInfo}/>
+            <InformationTempale {...twilioInfo} />
 
             <SubsectionTitle title={"Projects"} isLeft={false}/>
             <LinkGrid links={links} />
