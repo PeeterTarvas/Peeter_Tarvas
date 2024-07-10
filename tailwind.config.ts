@@ -32,6 +32,7 @@ const config: Config = {
       },
       colors: {
         'regal-blue': '#01021B',
+        'hover-blue': '#d0ddf2',
       },
     },
   },
