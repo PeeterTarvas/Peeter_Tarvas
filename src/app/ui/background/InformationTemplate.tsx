@@ -35,7 +35,7 @@ const RightTemplate = ({ title, text }: InformationTemplateInterface) => {
     return (
         <div className="my-10 p-5 xl:p10 rounded-l-3xl
          min-w-full max-w-full md:min-w-128 md:max-w-128 max-h-96
-          bg-regal-blue self-end text-white animate-rollInFromRight shadow-lg">
+          bg-regal-blue self-end text-white animate-rollInFromRight drop-shadow-sm">
             <h1 className={"my-4 text-4xl"}>{title}</h1>
             <ul className={"list-none m-1 text-4xl"}>
                 {getText(text)}
