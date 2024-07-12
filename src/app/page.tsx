@@ -14,9 +14,11 @@ import links from "@/app/repository/ProjectRepository";
 
 export default function Home() {
   return (
-    <main className="min-h-screen container bg-white text-black mx-auto py-4">
-        <Title/>
-        <div className={"flex flex-col container min-h-96"}>
+    <main className="min-h-screen min-w-full container bg-white text-black ">
+        <div className="p-10">
+            <Title/>
+        </div>
+        <div className={"flex flex-col container  min-w-full min-h-96"}>
             <SubsectionTitle title={"Education"} isLeft={false}/>
             <InformationTempale {...taltechInfo}/>
             <SubsectionTitle title={"Career"} isLeft={true}/>
@@ -32,7 +34,6 @@ export default function Home() {
             <SkillsGrid title={'Frameworks & Libraries'} skills={frameworksLibraries}/>
             <SkillsGrid title={'DevOps'} skills={devOps}/>
             <SkillsGrid title={'Tools'} skills={tools}/>
-
         </div>
     </main>
   );

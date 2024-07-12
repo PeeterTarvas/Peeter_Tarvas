@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {useRef} from "react";
 import { motion, useInView} from "framer-motion";
@@ -19,35 +20,27 @@ const getText = (text: Map<string, string[]>) => {
     return elements;
 };
 
-const LeftTemplate = ({ title, text }: InformationTemplateInterface & { ref: React.RefObject<HTMLDivElement> }) => {
-    return (
-        <section ref={ref}>
-            <div className="my-10 p-5 xl:p10 rounded-r-3xl
-                min-w-full max-w-full md:min-w-128 md:max-w-128
-             bg-regal-blue self-start text-white animate-rollInFromLeft shadow-lg">
-                <h1 className={"my-4 text-4xl"}>{title}</h1>
-                <ul className={"list-none m-1 text-4xl"}>
-                    {getText(text)}
-                </ul>
-            </div>
-        </section>
-    );
-}
+const LeftTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterface>(({ title, text }, ref) => (
+        <div ref={ref} className="my-10 p-5 xl:p10 rounded-r-3xl
+            min-w-full max-w-full md:min-w-128 md:max-w-128
+            bg-regal-blue self-start text-white animate-rollInFromLeft shadow-lg">
+            <h1 className={"my-4 text-4xl"}>{title}</h1>
+            <ul className={"list-none m-1 text-4xl"}>
+                {getText(text)}
+            </ul>
+        </div>
+));
 
-const RightTemplate = ({ title, text }: InformationTemplateInterface & { ref: React.RefObject<HTMLDivElement> }) => {
-    return (
-        <section ref={ref}>
-            <div className="my-10 p-5 xl:p10 rounded-l-3xl
-             min-w-full max-w-full md:min-w-128 md:max-w-128 max-h-96
-              bg-regal-blue self-end text-white animate-rollInFromRight drop-shadow-sm">
-                <h1 className={"my-4 text-4xl"}>{title}</h1>
-                <ul className={"list-none m-1 text-4xl"}>
-                    {getText(text)}
-                </ul>
-            </div>
-        </section>
-    );
-}
+const RightTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterface>(({ title, text }, ref) => (
+        <div ref={ref} className="my-10 p-5 xl:p10 rounded-l-3xl
+            min-w-full max-w-full md:min-w-128 md:max-w-128 max-h-96
+            bg-regal-blue self-end text-white animate-rollInFromRight drop-shadow-sm">
+            <h1 className={"my-4 text-4xl"}>{title}</h1>
+            <ul className={"list-none m-1 text-4xl"}>
+                {getText(text)}
+            </ul>
+        </div>
+));
 
 const InformationTemplate = (props: InformationTemplateInterface) => {
     const ref = useRef(null);
