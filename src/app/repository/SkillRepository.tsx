@@ -44,7 +44,7 @@ import ConfluenceIcon from '@/app/resources/svg/confluence-icon.svg';
 import SentryIcon from '@/app/resources/svg/sentry-icon.svg';
 import GrafanaIcon from '@/app/resources/svg/grafana-icon.svg';
 import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
-
+import OpenApiIcon from '@/app/resources/svg/openapi-icon.svg';
 
 
 import {SkillInterface} from "@/app/ui/skills/Skill";
@@ -325,6 +325,12 @@ const FigmaSkill: SkillInterface = {
     icon: FigmaIcon,
 }
 
+const OpenApiSkill: SkillInterface = {
+    name: 'OpenApi',
+    borderColor: 'border-[#30631d]' ,
+    icon: OpenApiIcon,
+}
+
 
 
 
@@ -336,7 +342,7 @@ const frameworksLibraries: SkillInterface[] = [AngularSkill, SpringBootSkill, Pl
     FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill];
 
 const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, BuildkiteSkill, JenkinsSkill,
-    MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill];
+    MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill, OpenApiSkill];
 
 const tools: SkillInterface[] = [IntellijSkill, VsCodeSkill, NetbeansSkill, DatadogSkill, JiraSkill, ConfluenceSkill,
     SentrySkill, GrafanaSkill, FigmaSkill, SwaggerSkill];
