@@ -30,6 +30,7 @@ const LeftTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterfa
             </ul>
         </div>
 ));
+LeftTemplate.displayName = "LeftTemplate";
 
 const RightTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterface>(({ title, text }, ref) => (
         <div ref={ref} className="my-10 p-5 xl:p10 rounded-l-3xl
@@ -41,6 +42,8 @@ const RightTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterf
             </ul>
         </div>
 ));
+RightTemplate.displayName = "RightTemplate";
+
 
 const InformationTemplate = (props: InformationTemplateInterface) => {
     const ref = useRef(null);
@@ -51,5 +54,6 @@ const InformationTemplate = (props: InformationTemplateInterface) => {
         return <RightTemplate {...props} ref={ref} />;
     }
 }
+InformationTemplate.displayName = "InformationTemplate";
 
 export default InformationTemplate;
