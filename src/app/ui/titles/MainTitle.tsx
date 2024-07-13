@@ -2,15 +2,15 @@
 import React from "react";
 import {TypeAnimation} from "react-type-animation";
 import Reference, {ReferenceInterface} from "@/app/ui/titles/Refernece";
-import Refernece from "@/app/ui/titles/Refernece";
 import EmailIcon from "@/app/resources/svg/email-icon.svg";
 import GithubIcon from "@/app/resources/svg/github-icon.svg";
 import LinkedInIcon from "@/app/resources/svg/linkedin-icon.svg";
+import CvIcon from "@/app/resources/svg/cv-icon.svg";
 
 
 const email: ReferenceInterface = {
     name: 'email',
-    link: 'peetertarvas@gmail.com',
+    link: 'mailto:peetertarvas@gmail.com',
     icon: EmailIcon
 }
 
@@ -24,6 +24,12 @@ const linkedin: ReferenceInterface = {
     name: 'linkedin',
     link: 'https://www.linkedin.com/in/peeter-tarvas-690a58171/',
     icon: LinkedInIcon
+}
+
+const cv: ReferenceInterface = {
+    name: 'cv',
+    link: '/cv.pdf',
+    icon: CvIcon
 }
 
 const MainTile = () => {
@@ -41,10 +47,11 @@ const MainTile = () => {
                     'Average guy', 2000,
                 ]} speed={60} wrapper={"span"} repeat={Infinity} />
             </div>
-            <div className={"w-1/4 grid grid-cols-4"}>
+            <div className={"md:m-5 w-full md:w-1/4 grid grid-cols-4 items-center place-content-center"}>
                 <Reference {...email} />
                 <Reference {...github} />
                 <Reference {...linkedin} />
+                <Reference {...cv} />
             </div>
         </section>
     )
