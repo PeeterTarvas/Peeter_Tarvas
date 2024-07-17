@@ -4,7 +4,9 @@ import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 const taltechInfoText: string[] = [
     'Member of the Student Parliament and the Academic Committee',
     'Member of TalTech Student Council of the School of IT',
-    'Exchange year with Erasmus+ at University of Alcala, Spain'
+    'Exchange year with Erasmus+ at University of Alcala, Spain',
+    'Thesis: Drawing Strategies Analysis for Embedded Figure Drawing Tests' +
+    ', check under projects tab for more info '
 ];
 
 const helmesInfoText: string[] = [
