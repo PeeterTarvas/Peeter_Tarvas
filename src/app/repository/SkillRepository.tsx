@@ -45,6 +45,9 @@ import SentryIcon from '@/app/resources/svg/sentry-icon.svg';
 import GrafanaIcon from '@/app/resources/svg/grafana-icon.svg';
 import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
 import OpenApiIcon from '@/app/resources/svg/openapi-icon.svg';
+import TailwindIcon from  '@/app/resources/svg/tailwind-icon.svg';
+import NextIcon from  '@/app/resources/svg/next-icon.svg';
+
 
 
 import {SkillInterface} from "@/app/ui/skills/Skill";
@@ -332,6 +335,19 @@ const OpenApiSkill: SkillInterface = {
 }
 
 
+const TailwindSkill: SkillInterface = {
+    name: 'Tailwind',
+    borderColor: 'border-[#2496ED]' ,
+    icon: TailwindIcon,
+}
+
+const NextSkill: SkillInterface = {
+    name: 'Next',
+    borderColor: 'border-[#1E283A]' ,
+    icon: NextIcon,
+}
+
+
 
 
 const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
@@ -339,7 +355,7 @@ const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptS
     RSkill, PowershellSkill, BashSkill, HtmlSkill, CssSkill];
 
 const frameworksLibraries: SkillInterface[] = [AngularSkill, SpringBootSkill, PlaywrightSkill, ReactSkill, VueSkill,
-    FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill];
+    FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill, TailwindSkill, NextSkill];
 
 const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, BuildkiteSkill, JenkinsSkill,
     MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill, OpenApiSkill];
