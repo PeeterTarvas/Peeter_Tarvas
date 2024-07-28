@@ -47,6 +47,7 @@ import FigmaIcon from '@/app/resources/svg/figma-icon.svg';
 import OpenApiIcon from '@/app/resources/svg/openapi-icon.svg';
 import TailwindIcon from  '@/app/resources/svg/tailwind-icon.svg';
 import NextIcon from  '@/app/resources/svg/next-icon.svg';
+import PostmanIcon from  '@/app/resources/svg/postman-icon.svg';
 
 
 
@@ -347,6 +348,12 @@ const NextSkill: SkillInterface = {
     icon: NextIcon,
 }
 
+const PostmanSkill: SkillInterface = {
+    name: 'Postman',
+    borderColor: 'border-[#e09e3a]' ,
+    icon: PostmanIcon,
+}
+
 
 
 
@@ -361,7 +368,7 @@ const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, B
     MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill, OpenApiSkill];
 
 const tools: SkillInterface[] = [IntellijSkill, VsCodeSkill, NetbeansSkill, DatadogSkill, JiraSkill, ConfluenceSkill,
-    SentrySkill, GrafanaSkill, FigmaSkill, SwaggerSkill];
+    SentrySkill, GrafanaSkill, FigmaSkill, SwaggerSkill, PostmanSkill];
 
 export { programmingSkills, frameworksLibraries, devOps, tools };
 

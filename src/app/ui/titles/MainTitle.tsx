@@ -23,7 +23,6 @@ const MainTile = () => {
                 <Reference {...email} />
                 <Reference {...github} />
                 <Reference {...linkedin} />
-                <Reference {...cv} />
             </div>
         </section>
     )
