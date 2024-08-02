@@ -47,7 +47,7 @@ const twilioMap = new Map<string, string[]>([
 ]);
 
 const taltechInfo: InformationTemplateInterface = {
-    title: 'Tallinn University of Technology',
+    title: 'Tallinn University of Technology, 2020 - 2024',
     isLeft: false,
     text: taltechMap
 }
@@ -65,7 +65,7 @@ const lhvPankInfo: InformationTemplateInterface = {
 }
 
 const twilioInfo: InformationTemplateInterface = {
-    title: 'Twilio AS,  2023 - Summer internship',
+    title: 'Twilio AS,  2022 - Summer internship',
     isLeft: true,
     text: twilioMap
 }
