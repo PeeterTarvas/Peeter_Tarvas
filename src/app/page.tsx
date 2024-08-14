@@ -15,7 +15,7 @@ import Bio from "@/app/ui/background/Bio";
 
 export default function Home() {
   return (
-    <main className="min-h-screen min-w-full container bg-white text-black ">
+    <main className="min-h-screen overflow-x-hidden min-w-full container bg-white text-black ">
         <div className="p-10">
             <Title/>
         </div>
