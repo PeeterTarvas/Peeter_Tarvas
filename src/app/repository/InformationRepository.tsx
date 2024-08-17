@@ -1,6 +1,11 @@
 import InformationTempale, {InformationTemplateInterface} from "@/app/ui/background/InformationTemplate";
 import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 
+const aarhusInfoText: string[] = [
+    '',
+    ''
+];
+
 const taltechInfoText: string[] = [
     'Member of the Student Parliament and the Academic Committee',
     'Member of TalTech Student Council of the School of IT',
@@ -30,6 +35,10 @@ const twilioText: string[] = [
     'Test new builds in servers for performance',
 ];
 
+const aarhusMap = new Map<string, string[]>([
+    ['Master\'s Degree Programme - Computer Science', aarhusInfoText]
+]);
+
 const taltechMap = new Map<string, string[]>([
     ['Bachelor of Science in Engineering - Informatics', taltechInfoText]
 ]);
@@ -45,6 +54,12 @@ const lhvPankMap = new Map<string, string[]>([
 const twilioMap = new Map<string, string[]>([
     ['Software Engineering Intern', twilioText]
 ]);
+
+const aarhusInfo: InformationTemplateInterface = {
+    title: 'Aarhus University, 2024 - Present',
+    isLeft: true,
+    text: aarhusMap
+}
 
 const taltechInfo: InformationTemplateInterface = {
     title: 'Tallinn University of Technology, 2020 - 2024',
@@ -72,4 +87,4 @@ const twilioInfo: InformationTemplateInterface = {
 
 
 
-export {taltechInfo, helmesInfo, lhvPankInfo, twilioInfo}
+export {taltechInfo, helmesInfo, lhvPankInfo, twilioInfo, aarhusInfo}

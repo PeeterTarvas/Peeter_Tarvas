@@ -4,7 +4,7 @@ import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
 import LinkGrid from "@/app/ui/link-grid/LinkGrid";
 import SkillsGrid from "@/app/ui/skills/SkillsGrid";
 import {devOps, frameworksLibraries, programmingSkills, tools} from "@/app/repository/SkillRepository";
-import {helmesInfo, lhvPankInfo, taltechInfo, twilioInfo} from "@/app/repository/InformationRepository";
+import {aarhusInfo, helmesInfo, lhvPankInfo, taltechInfo, twilioInfo} from "@/app/repository/InformationRepository";
 import links from "@/app/repository/ProjectRepository";
 import Bio from "@/app/ui/background/Bio";
 
@@ -22,6 +22,7 @@ export default function Home() {
         <div className={"flex flex-col container min-w-full min-h-96"}>
             <Bio/>
             <SubsectionTitle title={"Education"} isLeft={false}/>
+            <InformationTempale {...aarhusInfo}/>
             <InformationTempale {...taltechInfo}/>
             <SubsectionTitle title={"Career"} isLeft={true}/>
             <InformationTempale {...helmesInfo} />
