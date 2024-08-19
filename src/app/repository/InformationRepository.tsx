@@ -14,12 +14,17 @@ const taltechInfoText: string[] = [
     ', check under projects tab for more info '
 ];
 
-const helmesInfoText: string[] = [
+const helmesInfoTextKN: string[] = [
     'Automated Regression Tests - E2E - with Playwright and Typescript',
     'Maintain and develop Python generator tool that processes and generates test data',
     'Migrating back-end from Spring Boot 2 to Spring Boot 3',
     'Maintain front-end code in Vue3',
     'Manual Testing',
+];
+
+const helmesInfoTextStat: string[] = [
+    'Develop automated E2E tests with Playwright using Typescript',
+    'Implement changes in Java (Spring Boot) and Jenkins to support E2E tests'
 ];
 
 const lhvPankText: string[] = [
@@ -43,8 +48,12 @@ const taltechMap = new Map<string, string[]>([
     ['Bachelor of Science in Engineering - Informatics', taltechInfoText]
 ]);
 
-const helmesMap = new Map<string, string[]>([
-    ['Kuehne + Nagel Project - Software Developer/QA', helmesInfoText]
+const helmesMapStat = new Map<string, string[]>([
+    ['Statistics Estonia Project - Software Developer/QA', helmesInfoTextStat]
+]);
+
+const helmesMapKN = new Map<string, string[]>([
+    ['Kuehne + Nagel Project - Software Developer/QA', helmesInfoTextKN]
 ]);
 
 const lhvPankMap = new Map<string, string[]>([
@@ -58,31 +67,31 @@ const twilioMap = new Map<string, string[]>([
 const aarhusInfo: InformationTemplateInterface = {
     title: 'Aarhus University, 2024 - Present',
     isLeft: true,
-    text: aarhusMap
+    text: [aarhusMap]
 }
 
 const taltechInfo: InformationTemplateInterface = {
     title: 'Tallinn University of Technology, 2020 - 2024',
     isLeft: false,
-    text: taltechMap
+    text: [taltechMap]
 }
 
 const helmesInfo: InformationTemplateInterface = {
     title: 'Helmes AS, January 2024 - Present',
     isLeft: true,
-    text: helmesMap
+    text: [helmesMapStat, helmesMapKN]
 }
 
 const lhvPankInfo: InformationTemplateInterface = {
     title: 'LHV PANK AS,  2023 - Summer internship',
     isLeft: false,
-    text: lhvPankMap
+    text: [lhvPankMap]
 }
 
 const twilioInfo: InformationTemplateInterface = {
     title: 'Twilio AS,  2022 - Summer internship',
     isLeft: true,
-    text: twilioMap
+    text: [twilioMap]
 }
 
 

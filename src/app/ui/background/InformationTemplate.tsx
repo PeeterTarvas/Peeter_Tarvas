@@ -6,15 +6,17 @@ import { motion, useInView} from "framer-motion";
 export interface InformationTemplateInterface {
     title: string,
     isLeft: boolean;
-    text: Map<string, string[]>;
+    text: Map<string, string[]>[];
 }
 
-const getText = (text: Map<string, string[]>) => {
+const getText = (text: Map<string, string[]>[]) => {
     const elements: React.JSX.Element[] = [];
-    text.forEach((values, key) => {
-        elements.push(<ul className={"list-none mx-4 text-3xl"} key={key}>{key}</ul>);
-        values.forEach((value, index) => {
-            elements.push(<li className={"ml-8 my-4 text-xl"} key={`${key}-${index}`}>{value}</li>);
+    text.forEach(element  => {
+        element.forEach((values, key) => {
+            elements.push(<ul className={"list-none mx-4 text-3xl"} key={key}>{key}</ul>);
+            values.forEach((value, index) => {
+                elements.push(<li className={"ml-8 my-4 text-xl"} key={`${key}-${index}`}>{value}</li>);
+            });
         });
     });
     return elements;
@@ -34,7 +36,7 @@ LeftTemplate.displayName = "LeftTemplate";
 
 const RightTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterface>(({ title, text }, ref) => (
         <div ref={ref} className="my-10 p-2 lg:p-6 rounded-3xl
-            min-w-full max-w-full md:min-w-128 md:max-w-128 max-h-96
+            min-w-full max-w-full md:min-w-128 md:max-w-128 max-h-128
             bg-regal-blue lg:mr-10 self-end text-white animate-rollInFromRight drop-shadow-sm">
             <h1 className={"lg:mb-6 lg:mt-4 lg:text-5xl my-4 text-2xl"}>{title}</h1>
             <ul className={"list-none m-1 text-4xl"}>
