@@ -1,5 +1,4 @@
-import InformationTempale, {InformationTemplateInterface} from "@/app/ui/background/InformationTemplate";
-import SubsectionTitle from "@/app/ui/titles/SubsectionTitle";
+import {InformationTemplateInterface} from "@/app/ui/background/InformationTemplate";
 
 const aarhusInfoText: string[] = [
     '',
