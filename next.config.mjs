@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/Peeter_Tarvas",
+    output: 'export',
+    basePath: '/Peeter_Tarvas',
     assetPrefix: '/Peeter_Tarvas/',
-    output: "export",
     reactStrictMode: true,
     webpack(config) {
         config.module.rules.push({
