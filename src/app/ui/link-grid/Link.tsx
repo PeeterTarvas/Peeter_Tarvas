@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import image from "../assets/thesis.png";
+import Image from 'next/image'
 
 
 interface LinkInterface {
@@ -23,9 +23,11 @@ const Link = (props: LinkInterface) => {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <h1 className={"text-xl justify-self-start self-start"}>{props.name}</h1>
-                <img
+                <Image
                     src={props.picture}
                     alt="Hovered Image"
+                    width={500}
+                    height={500}
                     className={`absolute inset-x-0 bottom-0 w-full h-full object-cover transition-transform duration-200 ease-in-out 
                     ${isHovered ? 'transform translate-y-0' : 'transform translate-y-full'}`}
                 />
