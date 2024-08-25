@@ -13,9 +13,9 @@ const getText = (text: Map<string, string[]>[]) => {
     const elements: React.JSX.Element[] = [];
     text.forEach(element  => {
         element.forEach((values, key) => {
-            elements.push(<ul className={"list-none mx-4 text-3xl"} key={key}>{key}</ul>);
+            elements.push(<ul className={"list-none text-3xl"} key={key}>{key}</ul>);
             values.forEach((value, index) => {
-                elements.push(<li className={"ml-8 my-4 text-xl"} key={`${key}-${index}`}>{value}</li>);
+                elements.push(<li className={"ml-4 my-4 text-xl"} key={`${key}-${index}`}>{value}</li>);
             });
         });
     });
