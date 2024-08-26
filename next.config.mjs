@@ -6,7 +6,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    assetPrefix: "/",
+    assetPrefix: '/Peeter_Tarvas/',
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
