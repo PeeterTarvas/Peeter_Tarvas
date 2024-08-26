@@ -26,6 +26,7 @@ const Link = (props: LinkInterface) => {
                 <Image
                     src={props.picture}
                     alt="Click to go to Github page"
+                    unoptimized
                     width={500}
                     height={500}
                     className={`absolute inset-x-0 bottom-0 w-full h-full object-cover transition-transform duration-200 ease-in-out 
