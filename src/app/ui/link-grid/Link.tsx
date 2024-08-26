@@ -25,7 +25,7 @@ const Link = (props: LinkInterface) => {
                 <h1 className={"text-xl justify-self-start self-start"}>{props.name}</h1>
                 <Image
                     src={props.picture}
-                    alt="Hovered Image"
+                    alt="Click to go to Github page"
                     width={500}
                     height={500}
                     className={`absolute inset-x-0 bottom-0 w-full h-full object-cover transition-transform duration-200 ease-in-out 
