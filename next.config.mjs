@@ -8,7 +8,7 @@ const nextConfig = {
         loader: "akamai",
         path: "",
     },
-    assetPrefix: "./",
+    assetPrefix: "/",
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
