@@ -6,7 +6,9 @@ const nextConfig = {
     images: {
         unoptimized: true,
         loader: "akamai",
+        path: "",
     },
+    assetPrefix: "./",
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
