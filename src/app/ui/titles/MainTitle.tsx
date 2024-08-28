@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {TypeAnimation} from "react-type-animation";
-import Reference from "@/app/ui/titles/Refernece";
+import {Reference, ReferenceCopyLinkToClipboard} from "@/app/ui/titles/Refernece";
 import {cv, email, github, linkedin} from "@/app/repository/ReferenceRepository";
 
 const MainTile = () => {
@@ -20,7 +20,7 @@ const MainTile = () => {
                 ]} speed={50} wrapper={"span"} repeat={Infinity} />
             </div>
             <div className={"md:m-5 w-full md:w-1/4 grid grid-cols-4 items-center place-content-center"}>
-                <Reference {...email} />
+                <ReferenceCopyLinkToClipboard {...email} />
                 <Reference {...github} />
                 <Reference {...linkedin} />
             </div>
