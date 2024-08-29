@@ -6,7 +6,7 @@ import CvIcon from "@/app/resources/svg/cv-icon.svg";
 
 const email: ReferenceInterface = {
     name: 'email',
-    link: 'mailto:peetertarvas@gmail.com',
+    link: 'peetertarvas@gmail.com',
     icon: EmailIcon
 }
 

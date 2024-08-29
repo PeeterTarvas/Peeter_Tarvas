@@ -41,7 +41,7 @@ export const ReferenceCopyLinkToClipboard: React.FC<ReferenceInterface> = ({ nam
             </div>
             {copied && (
                 <span className="absolute top-full mt-2 text-sm text-green-600 opacity-0.5 animate-fadeInOut">
-                    Copied to clipboard!
+                    Copied!
                 </span>
             )}
         </div>
