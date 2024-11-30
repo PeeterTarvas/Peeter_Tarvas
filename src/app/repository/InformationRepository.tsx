@@ -1,8 +1,9 @@
 import {InformationTemplateInterface} from "@/app/ui/background/InformationTemplate";
 
 const aarhusInfoText: string[] = [
-    '',
-    ''
+    'Advanced Machine Learning and Data Science',
+    'Data-Intensive Systems',
+    'Ubiquitous Computing and Interaction'
 ];
 
 const taltechInfoText: string[] = [
