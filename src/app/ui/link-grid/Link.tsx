@@ -11,6 +11,9 @@ interface LinkInterface {
 
 const Link = (props: LinkInterface) => {
     const [isHovered, setIsHovered] = useState(false);
+    const basePath = process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '';
+
+
 
     return (
         <a href={props.link}>
@@ -24,7 +27,7 @@ const Link = (props: LinkInterface) => {
             >
                 <h1 className={"text-xl justify-self-start self-start"}>{props.name}</h1>
                 <Image
-                    src={props.picture}
+                    src={`${basePath}/${props.picture}`}
                     alt="Click to go to Github page"
                     unoptimized
                     width={500}
