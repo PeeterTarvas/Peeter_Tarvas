@@ -358,7 +358,7 @@ const PostmanSkill: SkillInterface = {
 const GatlingSkill: SkillInterface = {
     name: 'Gatling',
     borderColor: 'border-[#e09e3a]' ,
-    icon: PostmanIcon,
+    icon: GatlingIcon,
 }
 
 
