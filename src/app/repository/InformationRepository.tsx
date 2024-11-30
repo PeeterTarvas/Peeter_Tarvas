@@ -23,7 +23,9 @@ const helmesInfoTextKN: string[] = [
 
 const helmesInfoTextStat: string[] = [
     'Develop automated E2E tests with Playwright using Typescript',
-    'Implement changes in Java (Spring Boot) and Jenkins to support E2E tests'
+    'Implement changes in application (Spring Boot) and Jenkins to support E2E tests',
+    'Implement load testing system with Spring Boot and Gattling',
+    'Manual Testing',
 ];
 
 const lhvPankText: string[] = [
