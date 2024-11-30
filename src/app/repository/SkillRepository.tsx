@@ -48,6 +48,7 @@ import OpenApiIcon from '@/app/resources/svg/openapi-icon.svg';
 import TailwindIcon from  '@/app/resources/svg/tailwind-icon.svg';
 import NextIcon from  '@/app/resources/svg/next-icon.svg';
 import PostmanIcon from  '@/app/resources/svg/postman-icon.svg';
+import GatlingIcon from  '@/app/resources/svg/gatling-icon.svg';
 
 
 
@@ -354,7 +355,11 @@ const PostmanSkill: SkillInterface = {
     icon: PostmanIcon,
 }
 
-
+const GatlingSkill: SkillInterface = {
+    name: 'Gatling',
+    borderColor: 'border-[#e09e3a]' ,
+    icon: PostmanIcon,
+}
 
 
 const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptSkill,
@@ -362,7 +367,7 @@ const programmingSkills: SkillInterface[] = [JavaSkill, PythonSkill, TypescriptS
     RSkill, PowershellSkill, BashSkill, HtmlSkill, CssSkill];
 
 const frameworksLibraries: SkillInterface[] = [AngularSkill, SpringBootSkill, PlaywrightSkill, ReactSkill, VueSkill,
-    FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill, TailwindSkill, NextSkill];
+    FlaskSkill, PytorchSkill, JupyterSkill, YOLOSkill, MatplotlibSkill, JwtSkill, TailwindSkill, NextSkill, GatlingSkill];
 
 const devOps: SkillInterface[] = [GitSkill, AwsSkill, DockerSkill, NginxSkill, BuildkiteSkill, JenkinsSkill,
     MavenSkill, GradleSkill, GitlabSkill, GithubSkill,BitbucketSkill, AntSkill, OpenApiSkill];
