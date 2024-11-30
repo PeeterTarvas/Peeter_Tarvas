@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: '/Peeter_Tarvas',
     reactStrictMode: true,
     images: {
         unoptimized: true,
     },
-    assetPrefix: '/Peeter_Tarvas/',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '',
+    basePath: process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '',
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,

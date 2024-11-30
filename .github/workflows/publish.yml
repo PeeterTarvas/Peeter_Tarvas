@@ -18,6 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Copy public folder
+        run: |
+          mkdir -p out/
+          cp -r public/* out/
       - name: Checkout
         uses: actions/checkout@v4
 
