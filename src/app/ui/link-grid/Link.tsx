@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
 
-
 interface LinkInterface {
     name: string,
     link: string,
@@ -11,9 +10,8 @@ interface LinkInterface {
 
 const Link = (props: LinkInterface) => {
     const [isHovered, setIsHovered] = useState(false);
+
     const basePath = process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '';
-
-
 
     return (
         <a href={props.link}>
@@ -26,15 +24,18 @@ const Link = (props: LinkInterface) => {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <h1 className={"text-xl justify-self-start self-start"}>{props.name}</h1>
-                <Image
-                    src={`${basePath}/${props.picture}`}
-                    alt="Click to go to Github page"
-                    unoptimized
-                    width={500}
-                    height={500}
-                    className={`absolute inset-x-0 bottom-0 w-full h-full object-cover transition-transform duration-200 ease-in-out 
-                    ${isHovered ? 'transform translate-y-0' : 'transform translate-y-full'}`}
-                />
+                <div className="absolute inset-0 w-full h-full">
+                    <Image
+                        src={`${basePath}/${props.picture}`}
+                        alt={`${props.name} preview`}
+                        unoptimized
+                        fill
+                        sizes="(max-width: 384px) 100vw, 384px"
+                        className={`object-cover transition-transform duration-200 ease-in-out 
+                            ${isHovered ? 'transform translate-y-0' : 'transform translate-y-full'}`}
+                        style={{ objectFit: 'cover' }}
+                    />
+                </div>
             </button>
         </a>
     );
