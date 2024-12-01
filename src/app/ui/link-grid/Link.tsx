@@ -23,7 +23,7 @@ const Link = (props: LinkInterface) => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <h1 className={"text-xl justify-self-start self-start"}>{props.name}</h1>
+                <h1 className={"text-xl justify-self-center self-center"}>{props.name}</h1>
                 <div className="absolute inset-0 w-full h-full">
                     <Image
                         src={`${basePath}/${props.picture}`}
