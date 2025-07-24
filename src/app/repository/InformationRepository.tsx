@@ -1,15 +1,15 @@
 import {InformationTemplateInterface} from "@/app/ui/background/InformationTemplate";
 
 const aarhusInfoText: string[] = [
-    'Advanced Machine Learning and Data Science',
-    'Data-Intensive Systems',
-    'Ubiquitous Computing and Interaction'
+    'Master\'s Specialisation in Artificial Intelligence',
+    'Teaching assistant in Computer Architecture, Networking and Operation Systems',
 ];
 
 const taltechInfoText: string[] = [
     'Member of the Student Parliament and the Academic Committee',
     'Member of TalTech Student Council of the School of IT',
     'Exchange year with Erasmus+ at University of Alcala, Spain',
+    'Teaching assistant in Computer Programming and Software Development Project',
     'Thesis: Drawing Strategies Analysis for Embedded Figure Drawing Tests' +
     ', check under projects tab for more info '
 ];
