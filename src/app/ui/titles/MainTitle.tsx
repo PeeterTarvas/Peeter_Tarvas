@@ -3,27 +3,48 @@ import React from "react";
 import {TypeAnimation} from "react-type-animation";
 import {Reference, ReferenceCopyLinkToClipboard} from "@/app/ui/titles/Refernece";
 import {cv, email, github, linkedin} from "@/app/repository/ReferenceRepository";
+import { motion } from "framer-motion";
 
 const MainTile = () => {
     return (
-        <section>
-            <h1 className="lg:text-6xl text-3xl m-10 mb-4 font-extrabold italic">
+        <section className="text-center">
+            <motion.h1 
+                className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+            >
                 Peeter Tarvas
-            </h1>
-            <div className="lg:text-3xl text-xl m-10 font-semibold italic">
-                <TypeAnimation sequence={[
-                    'Software Engineer', 3000,
-                    'Quality Assurance Automation Engineer', 3000,
-                    'Health athletics enthusiast', 3000,
-                    'Skateboarder', 3000,
-                    'Average guy', 3000,
-                ]} speed={50} wrapper={"span"} repeat={Infinity} />
-            </div>
-            <div className={"md:m-5 w-full md:w-1/4 grid grid-cols-4 items-center place-content-center"}>
+            </motion.h1>
+            <motion.div 
+                className="text-xl md:text-2xl lg:text-3xl font-semibold italic mb-8 min-h-[2.5rem]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+            >
+                <TypeAnimation 
+                    sequence={[
+                        'Software Engineer', 3000,
+                        'Quality Assurance Automation Engineer', 3000,
+                        'Health athletics enthusiast', 3000,
+                        'Skateboarder', 3000,
+                        'Average guy', 3000,
+                    ]} 
+                    speed={50} 
+                    wrapper={"span"} 
+                    repeat={Infinity} 
+                />
+            </motion.div>
+            <motion.div 
+                className="flex justify-center space-x-6 md:space-x-8 mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+            >
                 <ReferenceCopyLinkToClipboard {...email} />
                 <Reference {...github} />
                 <Reference {...linkedin} />
-            </div>
+            </motion.div>
         </section>
     )
 }

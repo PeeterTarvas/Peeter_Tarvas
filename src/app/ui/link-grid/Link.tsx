@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image'
+import { motion } from "framer-motion";
 
 interface LinkInterface {
     name: string,
@@ -14,16 +15,29 @@ const Link = (props: LinkInterface) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '';
 
     return (
-        <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <button
-                className={"relative cursor-pointer p-6 max-h-96 max-w-96 min-h-96 min-w-96 " +
-                    " bg-gradient-to-br from-regal-blue via-regal-blue shadow-bottom-sm text-white " +
-                    " transition duration-300 ease-in-out drop-shadow-sm hover:bg-regal-blue rounded-3xl " +
-                    " hover:rounded-none overflow-hidden"}
+        <motion.a 
+            href={props.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block"
+            whileHover={{ y: -10 }}
+            transition={{ duration: 0.3 }}
+        >
+            <div
+                className={"relative cursor-pointer p-6 h-96 w-96 " +
+                    " bg-gradient-to-br from-regal-blue to-gray-900 text-white " +
+                    " transition-all duration-300 ease-in-out rounded-2xl card overflow-hidden"}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <h1 className={"text-xl justify-self-center self-center"}>{props.name}</h1>
+                <div className="relative z-10 h-full flex flex-col justify-between">
+                    <h1 className={"text-2xl font-bold text-white"}>{props.name}</h1>
+                    <div className="text-right">
+                        <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white">
+                            View Project
+                        </span>
+                    </div>
+                </div>
                 <div className="absolute inset-0 w-full h-full">
                     <Image
                         src={`${basePath}/${props.picture}`}
@@ -31,13 +45,14 @@ const Link = (props: LinkInterface) => {
                         unoptimized
                         fill
                         sizes="(max-width: 384px) 100vw, 384px"
-                        className={`object-cover transition-transform duration-200 ease-in-out 
-                            ${isHovered ? 'transform translate-y-0' : 'transform translate-y-full'}`}
+                        className={`object-cover transition-transform duration-500 ease-in-out 
+                            ${isHovered ? 'transform scale-110' : 'transform scale-100'}`}
                         style={{ objectFit: 'cover' }}
                     />
                 </div>
-            </button>
-        </a>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            </div>
+        </motion.a>
     );
 }
 

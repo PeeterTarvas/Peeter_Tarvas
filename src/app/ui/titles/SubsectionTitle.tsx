@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface SubsectionTitleInterface {
     title: string,
@@ -7,24 +8,34 @@ interface SubsectionTitleInterface {
 
 const RightTemplate = ({ title }: SubsectionTitleInterface) => {
   return (
-      <div className="inline-flex items-center justify-center w-full">
-          <hr className="w-full h-1 my-8 bg-regal-blue border-0"/>
-          <span className="px-3 font-medium text-gray-900 bg-white left-1/2">
-                <h1 className={"font-extrabold text-3xl italic"}>{title}</h1>
-            </span>
-          <hr className="w-12 h-1 my-8 bg-regal-blue border-0"/>
+      <div className="inline-flex items-center justify-center w-full my-12">
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-hover-blue to-transparent"></div>
+          <motion.span 
+              className="px-6 py-2 font-medium text-white bg-regal-blue rounded-full mx-4 border border-hover-blue/30"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+          >
+                <h1 className={"font-extrabold text-2xl md:text-3xl"}>{title}</h1>
+            </motion.span>
+          <div className="w-24 h-px bg-gradient-to-r from-hover-blue to-transparent"></div>
       </div>
   )
 }
 
 const LeftTemplate = ({ title }: SubsectionTitleInterface) => {
     return (
-        <div className="inline-flex items-center justify-center w-full">
-            <hr className="w-12 h-1 my-8 bg-regal-blue border-0"/>
-            <span className="px-3 font-medium text-gray-900 bg-white left-1/2">
-                <h1 className={"font-extrabold text-3xl italic"}>{title}</h1>
-            </span>
-            <hr className="w-full h-1 my-8 bg-regal-blue border-0"/>
+        <div className="inline-flex items-center justify-center w-full my-12">
+            <div className="w-24 h-px bg-gradient-to-r from-transparent to-hover-blue"></div>
+            <motion.span 
+                className="px-6 py-2 font-medium text-white bg-regal-blue rounded-full mx-4 border border-hover-blue/30"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+            >
+                <h1 className={"font-extrabold text-2xl md:text-3xl"}>{title}</h1>
+            </motion.span>
+            <div className="w-full h-px bg-gradient-to-r from-hover-blue to-transparent"></div>
         </div>
     )
 }
