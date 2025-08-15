@@ -7,6 +7,7 @@ const links = new Map<string, string[]>([
     ['StockViewer', ['https://github.com/PeeterTarvas/StockViewer', "images/stockviewer.png"]],
     ['AntColonySimulator', ['https://github.com/PeeterTarvas/AntColonySimulator', "images/antcolony.png"]],
     ['CharningGrid', ['https://github.com/PeeterTarvas/ChargingGrid', "images/charginggrid.png"]],
+    ['LHV Mobile Application Security Analysis', ['', "papers/system_security.pdf", "images/system-security-preview.svg"]],
 ]);
 
 

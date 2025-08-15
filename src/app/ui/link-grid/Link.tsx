@@ -14,7 +14,7 @@ const Link = (props: LinkInterface) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/Peeter_Tarvas' : '';
 
     return (
-        <a href={props.link}>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
             <button
                 className={"relative cursor-pointer p-6 max-h-96 max-w-96 min-h-96 min-w-96 " +
                     " bg-gradient-to-br from-regal-blue via-regal-blue shadow-bottom-sm text-white " +
