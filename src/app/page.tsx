@@ -152,6 +152,12 @@ export default function Home() {
           <SkillsGrid title={'Tools'} skills={tools}/>
         </motion.div>
       </div>
+      
+      {/* Decorative elements for better visual contrast */}
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      </div>
     </main>
   );
 }

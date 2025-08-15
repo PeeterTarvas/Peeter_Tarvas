@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg xmlns="http://www.w3.org/2000/svg"
-     aria-label="Gmail" role="img"
+     aria-label="Email" role="img"
      viewBox="0 0 512 512">
-    <path fill="white" d="M120 392V151.075h272V392"/>
-    <path fill-opacity=".05" d="M256 285L120 392l-4-212"/>
-    <path fill="white" d="M120 392H97c-12 0-22-10-22-23V143h45z"/>
-    <path fill-opacity=".08" d="M317 392h77V159H82"/>
-    <path fill="white" d="M97 121h318L256 234"/>
-    <path fill="white" d="M392 392h23c12 0 22-10 22-23V143h-45z"/>
-    <path fill="none" stroke="white" stroke-linecap="round" stroke-width="44" d="M97 143l159 115 159-115"/>
+    <rect width="512" height="512" rx="100" fill="#1a1a1a"/>
+    <path fill="none" stroke="white" stroke-width="30" d="M90 180l166 130 166-130m-300 180v-180m300 180v-180"/>
 </svg>

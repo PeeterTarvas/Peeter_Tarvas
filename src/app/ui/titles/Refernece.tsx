@@ -13,7 +13,7 @@ export const Reference: React.FC<ReferenceInterface> = ({name, link, icon: Icon}
             href={link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className={`flex rounded-full bg-white/5 backdrop-blur-sm p-3 place-self-center border border-white/10 hover:bg-white/10 transition duration-300 ease-in-out`}
+            className={`flex rounded-full bg-white/10 backdrop-blur-sm p-3 border border-white/20 hover:bg-white/20 transition duration-300 ease-in-out shadow-md`}
             whileHover={{ y: -5 }}
             whileTap={{ scale: 0.95 }}
         >
@@ -40,7 +40,7 @@ export const ReferenceCopyLinkToClipboard: React.FC<ReferenceInterface> = ({ nam
         <div className="relative inline-flex flex-col items-center">
             <motion.div
                 onClick={handleCopy}
-                className="cursor-pointer flex rounded-full bg-white/5 backdrop-blur-sm p-3 border border-white/10 hover:bg-white/10 transition duration-300 ease-in-out"
+                className="cursor-pointer flex rounded-full bg-white/10 backdrop-blur-sm p-3 border border-white/20 hover:bg-white/20 transition duration-300 ease-in-out shadow-md"
                 whileHover={{ y: -5 }}
                 whileTap={{ scale: 0.95 }}
             >
@@ -50,7 +50,7 @@ export const ReferenceCopyLinkToClipboard: React.FC<ReferenceInterface> = ({ nam
             </motion.div>
             {copied && (
                 <motion.span 
-                    className="absolute top-full mt-2 text-sm text-hover-blue"
+                    className="absolute top-full mt-2 text-sm text-hover-blue animate-pulse-slow"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}

@@ -7,6 +7,7 @@
   --background-start-rgb: 1, 2, 27; /* regal-blue */
   --background-end-rgb: 1, 2, 27; /* regal-blue */
   --accent-color: 208, 221, 242; /* hover-blue */
+  --highlight-color: 255, 255, 255; /* white */
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     rgb(var(--background-start-rgb));
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Custom animations */
@@ -64,6 +66,18 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out forwards;
 }
@@ -74,6 +88,10 @@ body {
 
 .animate-fadeInOut {
   animation: fadeInOut 3s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Custom styles */
@@ -90,12 +108,14 @@ body {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .skill-card {
@@ -104,12 +124,61 @@ body {
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #a0a0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Highlight effect */
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #a0a0ff);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.highlight:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @layer utilities {

@@ -11,9 +11,7 @@ export interface SkillInterface {
 const Skill: React.FC<SkillInterface> = ({ name, borderColor, icon: Icon }) => {
     return (
         <motion.div
-            className={`flex items-center justify-between skill-card min-h-12 min-w-40 max-w-40 px-4 py-2`}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className={`flex items-center justify-between skill-card min-h-12 min-w-40 max-w-40 px-4 py-2 border ${borderColor}`}
         >
             <div className="flex-shrink-0 mx-1" >
                 <Icon className="h-8 w-8" />

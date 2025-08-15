@@ -30,7 +30,7 @@ const SkillsGrid: React.FC<SkillsGridInterface> = (props: SkillsGridInterface) =
     return (
         <div className={"m-4"}>
             <motion.h1 
-                className={"text-2xl mx-2 font-bold mb-6"}
+                className={"text-2xl mx-2 font-bold mb-6 gradient-text"}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}

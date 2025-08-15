@@ -13,9 +13,9 @@ const getText = (text: Map<string, string[]>[]) => {
     const elements: React.JSX.Element[] = [];
     text.forEach(element  => {
         element.forEach((values, key) => {
-            elements.push(<ul className={"list-none text-2xl md:text-3xl font-semibold"} key={key}>{key}</ul>);
+            elements.push(<ul className={"list-none text-2xl md:text-3xl font-semibold highlight"} key={key}>{key}</ul>);
             values.forEach((value, index) => {
-                elements.push(<li className={"ml-4 my-3 text-lg md:text-xl"} key={`${key}-${index}`}>{value}</li>);
+                elements.push(<li className={"my-3 text-lg md:text-xl text-white/90"} key={`${key}-${index}`}>{value}</li>);
             });
         });
     });
@@ -27,12 +27,12 @@ const LeftTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterfa
         ref={ref} 
         className="my-8 p-6 rounded-2xl card
             min-w-full max-w-full md:min-w-128 md:max-w-128
-            lg:ml-10 self-start text-white"
+            self-start text-white"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
     >
-        <h1 className={"mb-4 mt-2 text-2xl md:text-4xl font-bold"}>{title}</h1>
+        <h1 className={"mb-4 mt-2 text-2xl md:text-4xl font-bold gradient-text"}>{title}</h1>
         <ul className={"list-none m-1"}>
             {getText(text)}
         </ul>
@@ -45,12 +45,12 @@ const RightTemplate = React.forwardRef<HTMLDivElement, InformationTemplateInterf
         ref={ref} 
         className="my-8 p-6 rounded-2xl card
             min-w-full max-w-full md:min-w-128 md:max-w-128
-            lg:mr-10 self-end text-white"
+            self-end text-white"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
     >
-        <h1 className={"mb-4 mt-2 text-2xl md:text-4xl font-bold"}>{title}</h1>
+        <h1 className={"mb-4 mt-2 text-2xl md:text-4xl font-bold gradient-text"}>{title}</h1>
         <ul className={"list-none m-1"}>
             {getText(text)}
         </ul>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384">
+  <rect width="384" height="384" fill="#1e40af"/>
+  <rect x="40" y="40" width="304" height="304" fill="#3b82f6" rx="16"/>
+  <text x="192" y="192" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle">PDF</text>
+  <text x="192" y="240" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">System Security</text>
+</svg>

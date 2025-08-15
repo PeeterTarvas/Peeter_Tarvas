@@ -11,7 +11,6 @@ const getLinks = (links: Map<string, string[]>) => {
     const elements: React.JSX.Element[] = [];
     let index = 0;
     links.forEach((value, key) => {
-        // Check if this is a PDF link (identified by having a .pdf extension in the second element)
         if (value[1] && value[1].endsWith('.pdf')) {
             elements.push(
                 <motion.div
@@ -42,7 +41,7 @@ const getLinks = (links: Map<string, string[]>) => {
 
 const LinkGrid = (props: LinkGridInterface) => {
     return (
-        <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 self-center mb-10"}>
+        <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 self-center mb-10"}>
             {getLinks(props.links)}
         </div>
     )
