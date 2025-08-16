@@ -13,7 +13,7 @@ const Bio = () => (
             Hi, I am a Software Developer with an aim of creating good quality applications, currently specializing
             mainly on E2E test development but also doing other things on the side.
             Also I am fond of Computer Vision and Machine Learning.
-            Besides IT related topics I also like to enjoy nature and working out
+            Besides IT related topics I also like to enjoy nature and working out.
         </p>
     </motion.div>
 );
