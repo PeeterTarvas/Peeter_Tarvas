@@ -31,7 +31,7 @@ const PDFLink = (props: PDFLinkInterface) => {
                 transition={{ duration: 0.3 }}
             >
                 <div
-                    className={"relative cursor-pointer p-6 h-96 w-96 project-card text-white " +
+                    className={"relative cursor-pointer p-6 h-96 w-96 project-card text-black " +
                         " transition-all duration-300 ease-in-out rounded-2xl overflow-hidden"}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
@@ -41,7 +41,7 @@ const PDFLink = (props: PDFLinkInterface) => {
                     }}
                 >
                     <div className="relative z-10 h-full flex flex-col justify-between">
-                        <h1 className={"text-2xl font-bold text-white"}>{props.name}</h1>
+                        <h1 className={"text-2xl font-bold text-black"}>{props.name}</h1>
                         <div className="text-right">
                             <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">
                                 View Project
